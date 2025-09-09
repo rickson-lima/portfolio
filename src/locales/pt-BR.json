@@ -1,0 +1,45 @@
+{
+  "about": {
+    "title": "Olá Mundo 🌐",
+    "description1": "Eu sou Rickson, trabalho como engenheiro de software há mais de 4 anos. Tenho me especializado em construir aplicações web e sites usando Javascript, React & Node. Procrastinei a construção deste site por anos, mas finalmente está aqui. Espero preenchê-lo ao longo do tempo com minhas experiências, projetos, ideias e pensamentos (principalmente sobre tecnologia).",
+    "description2": "Como profissional, gosto de resolver desafios do mundo real e construir aplicações complexas porque essas são as melhores oportunidades para melhorar minhas habilidades e aprender como impactar outras pessoas com minhas ideias. Resiliência é uma palavra-chave para minha jornada até aqui 🧠",
+    "description3": "No tempo livre eu curto relaxar, passar um tempo com os amigos e praticar meu piano ♪"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "remofy": {
+      "title": "Remofy",
+      "description": "Uma plataforma especializada em proteção de conteúdo digital e DMCA Takedown para criadores de conteúdo, influenciadores e produtores de conteúdo adulto."
+    },
+    "lemonfy": {
+      "title": "Lemonfy",
+      "description": "Uma plataforma de marketing de afiliados que capacita criadores e marcas a colaborar através de parcerias baseadas em performance."
+    },
+    "pomoHealthy": {
+      "title": "PomoHealthy",
+      "description": "Um aplicativo de timer Pomodoro focado em hábitos de trabalho saudáveis e produtividade."
+    },
+    "quotez": {
+      "title": "Quote'z",
+      "description": "Um jogo de trivia curto (e com bugs) com perguntas aleatórias sobre citações de personagens de filmes e figuras históricas."
+    },
+    "devFinances": {
+      "title": "dev.finances",
+      "description": "Um aplicativo simples de gestão financeira para ajudar usuários a acompanhar receitas e despesas."
+    }
+  },
+  "contact": {
+    "title": "Me encontre em",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "calcom": "Cal.com"
+  },
+  "footer": {
+    "copyright": "© 2025 Rickson Lima. Todos os direitos reservados."
+  },
+  "language": {
+    "select": "Selecionar idioma",
+    "portuguese": "PT-BR",
+    "english": "EN"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "about": {
+    "title": "Hello World 🌐",
+    "description1": "I'm Rickson, I work as a software engineer for over 4 years. I have specialized in building web applications and sites using Javascript, React & Node. I've procrastinated building this website for years, but it's finally here. I expect to fill it over time with my experiences, projects, ideas and thoughts (mostly about technology).",
+    "description2": "As a professional, I enjoy solving real-world challenges and building complex applications because these are the best opportunities to improve my skills and learn how to impact others with my ideas. Resilience is a keyword for my journey so far 🧠",
+    "description3": "In my free time I like to relax, spend time with friends and practice my piano ♪"
+  },
+  "projects": {
+    "title": "My Projects",
+    "remofy": {
+      "title": "Remofy",
+      "description": "A platform specialized in digital content protection and DMCA Takedown for content creators, influencers and adult content producers."
+    },
+    "lemonfy": {
+      "title": "Lemonfy",
+      "description": "An affiliate marketing platform empowering creators and brands to collaborate through performance-driven partnerships."
+    },
+    "pomoHealthy": {
+      "title": "PomoHealthy",
+      "description": "A Pomodoro timer app focused on healthy work habits and productivity."
+    },
+    "quotez": {
+      "title": "Quote'z",
+      "description": "A short (and buggy) trivia game featuring random questions about quotes from movie characters and historical figures."
+    },
+    "devFinances": {
+      "title": "dev.finances",
+      "description": "A simple finance management app to help users track income and expenses."
+    }
+  },
+  "contact": {
+    "title": "Find me on",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "calcom": "Cal.com"
+  },
+  "footer": {
+    "copyright": "© 2025 Rickson Lima. All rights reserved."
+  },
+  "language": {
+    "select": "Select language",
+    "portuguese": "PT-BR",
+    "english": "EN"
+  }
+}
