@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section className="space-y-4">
-      <img src="/me.jpeg" className="size-12 md:size-16 rounded-full" />
+      <img src="/me.png" className="size-18 rounded-full" />
       <h1 className="text-2xl font-bold">Hello!</h1>
 
       <p className="text-gray-300">
