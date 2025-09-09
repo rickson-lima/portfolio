@@ -1,9 +1,9 @@
-type ProjectProps = {
+interface ProjectProps {
   title: string;
   description: string;
   href: string;
   image: string;
-};
+}
 
 export function Project({ title, description, href, image }: ProjectProps) {
   return (

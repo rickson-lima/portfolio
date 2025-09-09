@@ -1,8 +1,8 @@
-type ContactProps = {
+interface ContactProps {
   label: string;
   href: string;
   icon: string;
-};
+}
 
 export function Contact({ label, href, icon }: ContactProps) {
   return (

@@ -28,6 +28,12 @@ function App() {
             image="https://github.com/rickson-lima/pomo-healthy/blob/main/public/favicon.png?raw=true"
           />
           <Project
+            title="Quote'z"
+            description="A short (and buggy) trivia game featuring random questions about quotes from movie characters and historical figures."
+            href="https://alura-quiz-xi.vercel.app/"
+            image="https://github.com/rickson-lima/alura-quiz/raw/refs/heads/main/public/favicon/favicon.ico"
+          />
+          <Project
             title="dev.finances"
             description="A simple finance management app to help users track income and expenses."
             href="https://rickson-lima.github.io/dev.finance"
