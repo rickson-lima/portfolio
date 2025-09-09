@@ -17,7 +17,7 @@ export function LanguageSelector() {
         className="bg-gray-800 border border-gray-600 rounded px-2 py-1 text-sm text-gray-300 focus:outline-none focus:border-gray-500"
       >
         <option value="pt-BR">🇧🇷</option>
-        <option value="en">🇺🇸 </option>
+        <option value="en">🇺🇸</option>
       </select>
     </div>
   );
