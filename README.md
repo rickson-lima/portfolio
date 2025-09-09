@@ -1,69 +1,162 @@
-# React + TypeScript + Vite
+# Portfolio - Rickson Lima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases my projects, skills, and provides ways to get in touch.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Clean, responsive layout with dark/light mode support
+- **Project Showcase**: Display of key projects with descriptions and links
+- **Contact Information**: Easy access to GitHub, LinkedIn, and Cal.com scheduling
+- **TypeScript**: Full type safety and better development experience
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling
+- **Vite**: Fast build tool and development server
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS 4
+- **Build Tool**: Vite
+- **Linting**: ESLint
+- **Package Manager**: npm
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📋 Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Before you begin, ensure you have the following installed:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Node.js** (version 18.0 or higher)
+- **npm** (comes with Node.js)
+
+You can check your versions by running:
+```bash
+node --version
+npm --version
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Clone the Repository
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
 ```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or the port shown in your terminal).
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+### 5. Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/                 # Static assets
+│   ├── dev.jpg           # Favicon
+│   ├── github.png        # GitHub icon
+│   ├── linkedin.png      # LinkedIn icon
+│   ├── lemonfy.svg       # Project logo
+│   └── ...
+├── src/
+│   ├── components/       # React components
+│   │   ├── about.tsx     # About section
+│   │   ├── contact.tsx   # Contact links
+│   │   ├── project.tsx   # Project cards
+│   │   └── section.tsx   # Section wrapper
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global styles
+├── index.html           # HTML template
+├── package.json         # Dependencies and scripts
+├── tailwind.config.js   # Tailwind CSS configuration
+├── vite.config.ts       # Vite configuration
+└── tsconfig.json        # TypeScript configuration
+```
+
+## 🎨 Customization
+
+### Adding New Projects
+
+To add a new project, edit the `src/App.tsx` file and add a new `Project` component:
+
+```tsx
+<Project
+  title="Your Project Name"
+  description="Project description"
+  href="https://your-project-url.com"
+  image="/path-to-image.png"
+/>
+```
+
+### Modifying Contact Information
+
+Update the contact links in `src/App.tsx`:
+
+```tsx
+<Contact
+  label="Your Platform"
+  href="https://your-profile-url.com"
+  icon="/your-icon.png"
+/>
+```
+
+### Styling
+
+The project uses Tailwind CSS for styling. You can:
+
+- Modify `src/index.css` for global styles
+- Update `tailwind.config.js` for custom theme configuration
+- Use Tailwind utility classes directly in components
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🌐 Deployment
+
+This project can be deployed to any static hosting service:
+
+- **Vercel**: Connect your GitHub repository for automatic deployments
+- **Netlify**: Drag and drop the `dist` folder or connect your repository
+- **GitHub Pages**: Use GitHub Actions to build and deploy
+- **Any static hosting**: Upload the contents of the `dist` folder
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. Feel free to fork it and style on your own way ✨
+
+## 📞 Contact
+
+- **GitHub**: [@rickson-lima](https://github.com/rickson-lima)
+- **LinkedIn**: [Rickson Lima](https://www.linkedin.com/in/rickson-lima/)
+- **Schedule a meeting**: [Cal.com](https://cal.com/rickson-lima-6tlawq/meeting?overlayCalendar=true)
+
+---
+
+Made with ❤️ by Rickson Lima
