@@ -2,7 +2,7 @@ export function About() {
   return (
     <section className="space-y-4">
       <img src="/me.png" className="size-18 rounded-full" />
-      <h1 className="text-2xl font-bold">Hello!</h1>
+      <h1 className="text-2xl font-bold">Hello World 🌐</h1>
 
       <p className="text-gray-300">
         I'm Rickson, I work as a software engineer from Amazonas, Brazil. I
