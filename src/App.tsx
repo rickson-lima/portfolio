@@ -15,13 +15,13 @@ function App() {
           <Project
             title={t("projects.remofy.title")}
             description={t("projects.remofy.description")}
-            href="https://lemonfy.io"
+            href="https://remofy.io"
             image="https://remofy.io/remofy.png"
           />
           <Project
             title={t("projects.lemonfy.title")}
             description={t("projects.lemonfy.description")}
-            href="https://remofy.io"
+            href="https://lemonfy.io"
             image="/lemonfy.svg"
           />
           <Project
