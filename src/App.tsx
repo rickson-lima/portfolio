@@ -22,7 +22,13 @@ function App() {
             title={t("projects.lemonfy.title")}
             description={t("projects.lemonfy.description")}
             href="https://lemonfy.io"
-            image="/lemonfy.svg"
+            image="/lemonfy.png"
+          />
+          <Project
+            title={t("projects.heydrivers.title")}
+            description={t("projects.heydrivers.description")}
+            href="https://play.google.com/store/apps/details?id=me.heygas&hl=pt_BR"
+            image="/heydrivers.webp"
           />
           <Project
             title={t("projects.pomoHealthy.title")}
