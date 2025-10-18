@@ -16,7 +16,7 @@ function App() {
             title={t("projects.remofy.title")}
             description={t("projects.remofy.description")}
             href="https://remofy.io"
-            image="https://remofy.io/remofy.png"
+            image="/remofy.webp"
           />
           <Project
             title={t("projects.lemonfy.title")}
