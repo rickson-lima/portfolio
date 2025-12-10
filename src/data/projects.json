@@ -15,7 +15,7 @@
     "titleKey": "projects.heyteam.title",
     "descriptionKey": "projects.heyteam.description",
     "href": "https://play.google.com/store/apps/details?id=com.sidia.heyteam",
-    "image": "/heyteam1.jpg"
+    "image": "/heyteam.jpg"
   },
   {
     "titleKey": "projects.heydrivers.title",
@@ -27,7 +27,7 @@
     "titleKey": "projects.pomoHealthy.title",
     "descriptionKey": "projects.pomoHealthy.description",
     "href": "https://pomo-healthy.vercel.app/",
-    "image": "https://github.com/rickson-lima/pomo-healthy/blob/main/public/favicon.png?raw=true"
+    "image": "/pomohealthy.png"
   },
   {
     "titleKey": "projects.quotez.title",
