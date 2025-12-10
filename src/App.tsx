@@ -3,6 +3,7 @@ import { Contact } from "./components/contact";
 import { Project } from "./components/project";
 import { Section } from "./components/section";
 import { useTranslation } from "./hooks/useTranslation";
+import projectsData from "./data/projects.json";
 
 function App() {
   const { t } = useTranslation();
@@ -12,42 +13,15 @@ function App() {
       <main className="min-h-screen space-y-20">
         <About />
         <Section title={t("projects.title")}>
-          <Project
-            title={t("projects.remofy.title")}
-            description={t("projects.remofy.description")}
-            href="https://remofy.io"
-            image="/remofy.webp"
-          />
-          <Project
-            title={t("projects.lemonfy.title")}
-            description={t("projects.lemonfy.description")}
-            href="https://lemonfy.io"
-            image="/lemonfy.png"
-          />
-          <Project
-            title={t("projects.heydrivers.title")}
-            description={t("projects.heydrivers.description")}
-            href="https://play.google.com/store/apps/details?id=me.heygas&hl=pt_BR"
-            image="/heydrivers.webp"
-          />
-          <Project
-            title={t("projects.pomoHealthy.title")}
-            description={t("projects.pomoHealthy.description")}
-            href="https://pomo-healthy.vercel.app/"
-            image="https://github.com/rickson-lima/pomo-healthy/blob/main/public/favicon.png?raw=true"
-          />
-          <Project
-            title={t("projects.quotez.title")}
-            description={t("projects.quotez.description")}
-            href="https://alura-quiz-xi.vercel.app/"
-            image="https://github.com/rickson-lima/alura-quiz/raw/refs/heads/main/public/favicon/favicon.ico"
-          />
-          <Project
-            title={t("projects.devFinances.title")}
-            description={t("projects.devFinances.description")}
-            href="https://rickson-lima.github.io/dev.finance"
-            image="https://raw.githubusercontent.com/rickson-lima/dev.finance/415267a72b440a44876cdd3cd4b67e7ae9ccb2d3/assets/ico.svg"
-          />
+          {projectsData.map((project, index) => (
+            <Project
+              key={index}
+              title={t(project.titleKey)}
+              description={t(project.descriptionKey)}
+              href={project.href}
+              image={project.image}
+            />
+          ))}
         </Section>
         <Section title={t("contact.title")}>
           <Contact

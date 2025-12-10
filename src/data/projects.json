@@ -1,0 +1,44 @@
+[
+  {
+    "titleKey": "projects.remofy.title",
+    "descriptionKey": "projects.remofy.description",
+    "href": "https://remofy.io",
+    "image": "/remofy.webp"
+  },
+  {
+    "titleKey": "projects.lemonfy.title",
+    "descriptionKey": "projects.lemonfy.description",
+    "href": "https://lemonfy.io",
+    "image": "/lemonfy.png"
+  },
+  {
+    "titleKey": "projects.heyteam.title",
+    "descriptionKey": "projects.heyteam.description",
+    "href": "https://play.google.com/store/apps/details?id=com.sidia.heyteam",
+    "image": "/heyteam1.jpg"
+  },
+  {
+    "titleKey": "projects.heydrivers.title",
+    "descriptionKey": "projects.heydrivers.description",
+    "href": "https://play.google.com/store/apps/details?id=me.heygas&hl=pt_BR",
+    "image": "/heydrivers.webp"
+  },
+  {
+    "titleKey": "projects.pomoHealthy.title",
+    "descriptionKey": "projects.pomoHealthy.description",
+    "href": "https://pomo-healthy.vercel.app/",
+    "image": "https://github.com/rickson-lima/pomo-healthy/blob/main/public/favicon.png?raw=true"
+  },
+  {
+    "titleKey": "projects.quotez.title",
+    "descriptionKey": "projects.quotez.description",
+    "href": "https://alura-quiz-xi.vercel.app/",
+    "image": "https://github.com/rickson-lima/alura-quiz/raw/refs/heads/main/public/favicon/favicon.ico"
+  },
+  {
+    "titleKey": "projects.devFinances.title",
+    "descriptionKey": "projects.devFinances.description",
+    "href": "https://rickson-lima.github.io/dev.finance",
+    "image": "https://raw.githubusercontent.com/rickson-lima/dev.finance/415267a72b440a44876cdd3cd4b67e7ae9ccb2d3/assets/ico.svg"
+  }
+]
