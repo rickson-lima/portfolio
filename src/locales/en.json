@@ -1,9 +1,16 @@
 {
+  "hero": {
+    "role": "Full-Stack Software Engineer",
+    "description": "Building resilient platforms and bridging the gap between people and technology through code.",
+    "aboutMe": "About me",
+    "viewProjects": "View projects"
+  },
   "about": {
-    "title": "Hello World 🌐",
-    "description1": "I'm Rickson, I work as a software engineer for over 4 years. I have specialized in building web applications and sites using Javascript, React & Node. I've procrastinated building this website for years, but it's finally here. I expect to fill it over time with my experiences, projects, ideas and thoughts (mostly about technology).",
-    "description2": "As a professional, I enjoy solving real-world challenges and building complex applications because these are the best opportunities to improve my skills and learn how to impact others with my ideas. Resilience is a keyword for my journey so far 🧠",
-    "description3": "In my free time I like to relax, spend time with friends and practice my piano ♪"
+    "title": "About Me",
+    "description1": "I’m Rickson, a Full-Stack Software Engineer with over 4 years of experience scaling web applications. I specialize in the Javascript ecosystem (Node.js, React, NestJS) and cloud infrastructure (AWS, Redis), building resilient SaaS platforms from the ground up.",
+    "description2": "I love solving real-world performance puzzles—like reducing data processing from 30 minutes to 30 seconds or optimizing checkout systems for 25k+ daily users. I've also led the development of official Stripe partner apps and internal tools serving thousands.",
+    "description3": "Beyond the code, I focus on fostering supportive team environments and clear communication. In my free time, you'll find me practicing piano or volunteering with early-stage startups.",
+    "checkLinkedin": "Check my LinkedIn"
   },
   "projects": {
     "title": "My Projects",

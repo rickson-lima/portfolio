@@ -1,86 +1,114 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslation } from "../hooks/useTranslation";
-import { LanguageSelector } from "./language-selector";
 
 export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 pt-20 pb-32">
-      {/* Background Gradients */}
-      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[128px] -z-10" />
-      <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[128px] -z-10" />
+    <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 pb-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+        {/* Left Column - Text */}
+        <div className="space-y-8 relative z-10 order-2 md:order-1">
+          <div className="space-y-4">
+            <motion.h3
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-yellow-500 font-bold tracking-wider text-sm md:text-base uppercase"
+            >
+              {t("hero.role")}
+            </motion.h3>
 
-      <div className="absolute top-6 right-6 z-10">
-        <LanguageSelector />
-      </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="relative"
+            >
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight">
+                Rickson Lima
+              </h1>
+            </motion.div>
 
-      <div className="max-w-4xl mx-auto w-full space-y-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-          </span>
-          Available for new opportunities
-        </motion.div>
-
-        <div className="space-y-6">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight text-white leading-[0.9]"
-          >
-            {t("about.title")}
-          </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl text-zinc-400 max-w-lg leading-relaxed"
+            >
+              {t("hero.description")}
+            </motion.p>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-2xl text-xl text-zinc-400 leading-relaxed space-y-4"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex items-center gap-4 pt-4"
           >
-            <p>{t("about.description1")}</p>
-            <p>{t("about.description2")}</p>
+            <motion.a
+              href="#projects"
+              animate={{ y: [0, 10, 0] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="flex flex-col items-center gap-2 group cursor-pointer"
+            >
+              <div className="flex items-center justify-center p-3 rounded-full border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800 transition-colors group-hover:border-yellow-500/50">
+                <ArrowRight className="size-5 text-yellow-500 rotate-90" />
+              </div>
+              <span className="text-sm font-medium text-zinc-500 group-hover:text-yellow-400 transition-colors uppercase tracking-widest">
+                Scroll Down
+              </span>
+            </motion.a>
           </motion.div>
         </div>
 
+        {/* Right Column - Image Card */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex items-center gap-4"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative order-1 md:order-2"
         >
-          <a
-            href="#projects"
-            className="px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-colors"
+          {/* Card Container */}
+          <motion.div
+            whileHover={{ y: -10 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="relative aspect-square w-full max-w-sm mx-auto md:ml-auto bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-zinc-800"
           >
-            View Work
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-4 rounded-full bg-zinc-900 border border-zinc-800 text-white font-semibold hover:bg-zinc-800 transition-colors"
-          >
-            Contact Me
-          </a>
+            <img
+              src="/rickson-profile.jpg"
+              alt="Rickson Lima"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            />
+          </motion.div>
+
+          {/* Decorative Elements */}
+          <motion.div
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+            className="absolute -top-12 -right-12 w-64 h-64 bg-yellow-500/20 rounded-full blur-3xl -z-10"
+          />
+          <motion.div
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              repeatType: "reverse",
+              delay: 1,
+            }}
+            className="absolute -bottom-12 -left-12 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl -z-10"
+          />
         </motion.div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-500"
-      >
-        <span className="text-xs uppercase tracking-widest">Scroll</span>
-        <ArrowDown className="size-4 animate-bounce" />
-      </motion.div>
     </section>
   );
 }

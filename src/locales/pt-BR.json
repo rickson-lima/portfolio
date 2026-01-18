@@ -1,9 +1,16 @@
 {
+  "hero": {
+    "role": "Engenheiro de Software Full-Stack",
+    "description": "Construindo plataformas resilientes e diminuindo a lacuna entre pessoas e tecnologia através do código.",
+    "aboutMe": "Sobre mim",
+    "viewProjects": "Ver projetos"
+  },
   "about": {
-    "title": "Olá Mundo 🌐",
-    "description1": "Eu sou Rickson, trabalho como engenheiro de software há mais de 4 anos. Tenho me especializado em construir aplicações web e sites usando Javascript, React & Node. Procrastinei a construção deste site por anos, mas finalmente está aqui. Espero preenchê-lo ao longo do tempo com minhas experiências, projetos, ideias e pensamentos (principalmente sobre tecnologia).",
-    "description2": "Como profissional, gosto de resolver desafios do mundo real e construir aplicações complexas porque essas são as melhores oportunidades para melhorar minhas habilidades e aprender como impactar outras pessoas com minhas ideias. Resiliência é uma palavra-chave para minha jornada até aqui 🧠",
-    "description3": "No tempo livre eu curto relaxar, passar um tempo com os amigos e praticar meu piano ♪"
+    "title": "Sobre Mim",
+    "description1": "Sou Rickson, um Engenheiro de Software Full-Stack com mais de 4 anos de experiência escalando aplicações web. Especialista no ecossistema Javascript (Node.js, React, NestJS) e infraestrutura em nuvem (AWS, Redis), construindo plataformas SaaS resilientes do zero.",
+    "description2": "Adoro resolver desafios de performance do mundo real — como reduzir o processamento de dados de 30 minutos para 30 segundos ou otimizar sistemas de checkout para mais de 25k visitas diárias. Também liderei o desenvolvimento de apps parceiros oficiais da Stripe e ferramentas internas para milhares de usuários.",
+    "description3": "Além do código, priorizo a criação de ambientes de equipe colaborativos e uma comunicação clara. No meu tempo livre, você me encontrará praticando piano ou voluntariando em startups em estágio inicial.",
+    "checkLinkedin": "Confira meu LinkedIn"
   },
   "projects": {
     "title": "Meus Projetos",

@@ -1,6 +1,11 @@
 import { useTranslation } from "../hooks/useTranslation";
+import clsx from "clsx";
 
-export function LanguageSelector() {
+interface Props {
+  className?: string;
+}
+
+export function LanguageSelector({ className }: Props) {
   const { changeLanguage, currentLanguage } = useTranslation();
 
   const handleLanguageChange = (language: string) => {
@@ -8,16 +13,20 @@ export function LanguageSelector() {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className={clsx("relative", className)}>
       <select
         value={currentLanguage}
         onChange={(e) => {
           handleLanguageChange(e.target.value);
         }}
-        className="bg-zinc-900/50 backdrop-blur-sm border border-white/10 rounded-lg px-3 py-1.5 text-sm text-zinc-300 focus:outline-none focus:border-blue-500/50 hover:bg-white/5 transition-colors cursor-pointer"
+        className="bg-transparent text-sm text-zinc-400 hover:text-white transition-colors cursor-pointer appearance-none pl-2 pr-6 outline-none font-medium text-center"
       >
-        <option value="pt-BR">🇧🇷</option>
-        <option value="en">🇺🇸</option>
+        <option value="pt-BR" className="bg-zinc-900">
+          🇧🇷 PT
+        </option>
+        <option value="en" className="bg-zinc-900">
+          🇺🇸 EN
+        </option>
       </select>
     </div>
   );
