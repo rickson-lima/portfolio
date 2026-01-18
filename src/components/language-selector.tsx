@@ -19,7 +19,7 @@ export function LanguageSelector({ className }: Props) {
         onChange={(e) => {
           handleLanguageChange(e.target.value);
         }}
-        className="bg-transparent text-sm text-zinc-400 hover:text-white transition-colors cursor-pointer appearance-none pl-2 pr-6 outline-none font-medium text-center"
+        className="bg-transparent text-sm text-zinc-400 hover:text-[#dbf24a] transition-colors cursor-pointer appearance-none pl-2 pr-6 outline-none font-medium text-center"
       >
         <option value="pt-BR" className="bg-zinc-900">
           🇧🇷 PT

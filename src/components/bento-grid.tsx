@@ -18,7 +18,7 @@ export function BentoGrid() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {t("projects.title")}
           </h2>
-          <div className="h-1 w-20 bg-yellow-500 rounded-full" />
+          <div className="h-1 w-20 bg-[#dbf24a] rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -60,7 +60,7 @@ function BentoCard({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex flex-col overflow-hidden rounded-3xl bg-zinc-900/50 border border-white/10 hover:border-white/20 transition-colors h-full"
+      className="group relative flex flex-col overflow-hidden rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors h-full"
     >
       <div className="relative h-64 overflow-hidden bg-zinc-800">
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent z-10 opacity-60" />
@@ -78,7 +78,7 @@ function BentoCard({
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-bold text-xl text-white group-hover:text-yellow-400 transition-colors">
+            <h3 className="font-bold text-xl text-white group-hover:text-[#dbf24a] transition-colors">
               {title}
             </h3>
             <p className="text-zinc-400 text-sm leading-relaxed">

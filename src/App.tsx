@@ -7,7 +7,7 @@ import { BackgroundEffect } from "./components/background-effect";
 
 function App() {
   return (
-    <div className="bg-zinc-950 min-h-screen selection:bg-yellow-500/30">
+    <div className="min-h-screen">
       <Navbar />
       <MouseFollower />
       <BackgroundEffect />

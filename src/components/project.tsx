@@ -37,10 +37,10 @@ export function Project({
 
         <div className="flex-1 space-y-2 min-w-0">
           <div className="flex items-center justify-between gap-2">
-            <h3 className="font-semibold text-zinc-100 group-hover:text-yellow-400 transition-colors truncate">
+            <h3 className="font-semibold text-zinc-100 group-hover:text-[#dbf24a] transition-colors truncate">
               {title}
             </h3>
-            <ArrowUpRight className="size-4 text-zinc-500 group-hover:text-yellow-400 transition-colors" />
+            <ArrowUpRight className="size-4 text-zinc-500 group-hover:text-[#dbf24a] transition-colors" />
           </div>
           <p className="text-sm text-zinc-400 leading-relaxed line-clamp-2">
             {description}

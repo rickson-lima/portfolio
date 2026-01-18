@@ -43,20 +43,20 @@ export function MouseFollower() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-50 border border-yellow-500/50 rounded-full mix-blend-difference hidden md:block"
+      className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-50 border border-[#dbf24a]/50 rounded-full mix-blend-difference hidden md:block"
       style={{
         x: cursorXSpring,
         y: cursorYSpring,
       }}
       animate={{
         scale: isHovering ? 2.5 : 1,
-        backgroundColor: isHovering ? "rgba(234, 179, 8, 0.1)" : "transparent",
+        backgroundColor: isHovering ? "rgba(219, 242, 74, 0.1)" : "transparent",
       }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <div
-          className={`w-1 h-1 bg-yellow-500 rounded-full transition-all duration-300 ${isHovering ? "opacity-0" : "opacity-100"}`}
+          className={`w-1 h-1 bg-[#dbf24a] rounded-full transition-all duration-300 ${isHovering ? "opacity-0" : "opacity-100"}`}
         />
       </div>
     </motion.div>

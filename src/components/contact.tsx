@@ -15,12 +15,12 @@ export function Contact({ label, href, icon: Icon, displayUrl }: ContactProps) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="flex items-center justify-center size-10 rounded-lg bg-zinc-900 border border-white/10 group-hover:border-yellow-500/30 group-hover:text-yellow-400 transition-colors">
+      <div className="flex items-center justify-center size-10 rounded-lg bg-zinc-900 border border-white/10 group-hover:border-[#dbf24a]/30 group-hover:text-[#dbf24a] transition-colors">
         <Icon className="size-5" />
       </div>
 
       <div className="flex flex-col">
-        <span className="font-medium text-zinc-200 group-hover:text-yellow-400 transition-colors">
+        <span className="font-medium text-zinc-200 group-hover:text-[#dbf24a] transition-colors">
           {label}
         </span>
         {displayUrl && (

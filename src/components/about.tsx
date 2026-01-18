@@ -8,7 +8,7 @@ export function About() {
   return (
     <section id="about" className="py-32 px-6 relative overflow-hidden">
       {/* Background Gradients */}
-      <div className="absolute top-0 left-0 -translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[128px] -z-10" />
+      <div className="absolute top-0 left-0 -translate-y-1/4 -translate-x-1/4 w-[500px] h-[500px] bg-[#22d3ee]/10 rounded-full blur-[128px] -z-10" />
 
       <div className="max-w-7xl mx-auto space-y-16">
         <motion.div
@@ -20,7 +20,7 @@ export function About() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {t("about.title")}
           </h2>
-          <div className="h-1 w-20 bg-yellow-500 rounded-full" />
+          <div className="h-1 w-20 bg-[#dbf24a] rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -40,7 +40,7 @@ export function About() {
                 href="https://linkedin.com/in/limarickson"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white font-medium hover:text-yellow-400 transition-colors group"
+                className="inline-flex items-center gap-2 text-white font-medium hover:text-[#dbf24a] transition-colors group"
               >
                 {t("about.checkLinkedin")}
                 <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -56,9 +56,9 @@ export function About() {
             transition={{ duration: 0.8 }}
             className="relative h-full min-h-[300px] rounded-3xl bg-zinc-900/50 border border-white/10 overflow-hidden hidden lg:block"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#22d3ee]/5 to-[#dbf24a]/5" />
             {/* Abstract decoration matching the tech theme */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-3xl rounded-full" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[#22d3ee]/20 blur-3xl rounded-full" />
           </motion.div>
         </div>
       </div>

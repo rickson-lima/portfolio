@@ -15,7 +15,7 @@ export function Hero() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-yellow-500 font-bold tracking-wider text-sm md:text-base uppercase"
+              className="text-[#dbf24a] font-bold tracking-wider text-sm md:text-base uppercase"
             >
               {t("hero.role")}
             </motion.h3>
@@ -57,10 +57,10 @@ export function Hero() {
               }}
               className="flex flex-col items-center gap-2 group cursor-pointer"
             >
-              <div className="flex items-center justify-center p-3 rounded-full border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800 transition-colors group-hover:border-yellow-500/50">
-                <ArrowRight className="size-5 text-yellow-500 rotate-90" />
+              <div className="flex items-center justify-center p-3 rounded-full border border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800 transition-colors group-hover:border-[#dbf24a]/50">
+                <ArrowRight className="size-5 text-[#dbf24a] rotate-90" />
               </div>
-              <span className="text-sm font-medium text-zinc-500 group-hover:text-yellow-400 transition-colors uppercase tracking-widest">
+              <span className="text-sm font-medium text-zinc-500 group-hover:text-[#dbf24a] transition-colors uppercase tracking-widest">
                 Scroll Down
               </span>
             </motion.a>
@@ -81,7 +81,7 @@ export function Hero() {
             className="relative aspect-square w-full max-w-sm mx-auto md:ml-auto bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-zinc-800"
           >
             <img
-              src="/rickson-profile.jpg"
+              src="/me.png"
               alt="Rickson Lima"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
             />
@@ -95,7 +95,7 @@ export function Hero() {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-            className="absolute -top-12 -right-12 w-64 h-64 bg-yellow-500/20 rounded-full blur-3xl -z-10"
+            className="absolute -top-12 -right-12 w-64 h-64 bg-[#dbf24a]/20 rounded-full blur-3xl -z-10"
           />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -105,7 +105,7 @@ export function Hero() {
               repeatType: "reverse",
               delay: 1,
             }}
-            className="absolute -bottom-12 -left-12 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl -z-10"
+            className="absolute -bottom-12 -left-12 w-64 h-64 bg-white/5 rounded-full blur-3xl -z-10"
           />
         </motion.div>
       </div>
