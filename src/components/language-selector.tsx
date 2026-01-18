@@ -4,7 +4,7 @@ export function LanguageSelector() {
   const { changeLanguage, currentLanguage } = useTranslation();
 
   const handleLanguageChange = (language: string) => {
-    changeLanguage(language);
+    void changeLanguage(language);
   };
 
   return (
@@ -14,7 +14,7 @@ export function LanguageSelector() {
         onChange={(e) => {
           handleLanguageChange(e.target.value);
         }}
-        className="bg-gray-800 border border-gray-600 rounded px-2 py-1 text-sm text-gray-300 focus:outline-none focus:border-gray-500"
+        className="bg-zinc-900/50 backdrop-blur-sm border border-white/10 rounded-lg px-3 py-1.5 text-sm text-zinc-300 focus:outline-none focus:border-blue-500/50 hover:bg-white/5 transition-colors cursor-pointer"
       >
         <option value="pt-BR">🇧🇷</option>
         <option value="en">🇺🇸</option>
