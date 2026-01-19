@@ -24,16 +24,16 @@ export function Navbar() {
               className="p-2.5 rounded-full text-zinc-400 hover:text-[#dbf24a] hover:bg-white/10 transition-all active:scale-95"
               title={item.label}
             >
-              <item.icon className="size-5" />
+              <item.icon className="size-4" />
             </a>
           ))}
         </div>
 
-        <div className="w-px h-6 bg-white/10 mx-1" />
+        <div className="w-px h-4 bg-white/10 mx-1" />
 
         <LanguageSelector />
 
-        <div className="w-px h-6 bg-white/10 mx-1" />
+        <div className="w-px h-4 bg-white/10 mx-1" />
 
         <div className="flex items-center gap-1 pr-1">
           <a
@@ -42,7 +42,7 @@ export function Navbar() {
             rel="noreferrer"
             className="p-2.5 rounded-full text-zinc-400 hover:text-[#dbf24a] hover:bg-white/10 transition-all active:scale-95"
           >
-            <Github className="size-5" />
+            <Github className="size-4" />
           </a>
           <a
             href="https://www.linkedin.com/in/rickson-lima/"
@@ -50,7 +50,7 @@ export function Navbar() {
             rel="noreferrer"
             className="p-2.5 rounded-full text-zinc-400 hover:text-[#dbf24a] hover:bg-white/10 transition-all active:scale-95"
           >
-            <Linkedin className="size-5" />
+            <Linkedin className="size-4" />
           </a>
         </div>
       </motion.nav>

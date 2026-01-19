@@ -10,9 +10,9 @@ export function BackgroundEffect() {
       />
 
       {/* Ambient Gradient Blobs */}
-      <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[#22d3ee]/5 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
+      <div className="hidden md:block absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[#22d3ee]/5 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
       <div
-        className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#dbf24a]/5 rounded-full blur-[120px] mix-blend-screen animate-pulse"
+        className="hidden md:block absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#dbf24a]/5 rounded-full blur-[120px] mix-blend-screen animate-pulse"
         style={{ animationDelay: "2s" }}
       />
     </div>

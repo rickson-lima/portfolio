@@ -45,7 +45,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center gap-4 pt-4"
+            className="flex items-center justify-center md:justify-start gap-4 pt-4"
           >
             <motion.a
               href="#projects"
@@ -75,17 +75,20 @@ export function Hero() {
           className="relative order-1 md:order-2"
         >
           {/* Card Container */}
-          <motion.div
-            whileHover={{ y: -10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="relative aspect-square w-full max-w-sm mx-auto md:ml-auto bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-zinc-800"
-          >
-            <img
-              src="/me.png"
-              alt="Rickson Lima"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-            />
-          </motion.div>
+          <div className="relative w-full max-w-[280px] sm:max-w-xs mx-auto md:ml-auto group">
+            <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2rem] border border-[#dbf24a]/50 z-0 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2" />
+            <motion.div
+              whileHover={{ y: -10 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative z-10 aspect-square bg-zinc-900 rounded-[2rem] overflow-hidden shadow-2xl border border-zinc-800"
+            >
+              <img
+                src="/me.png"
+                alt="Rickson Lima"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+            </motion.div>
+          </div>
 
           {/* Decorative Elements */}
           <motion.div

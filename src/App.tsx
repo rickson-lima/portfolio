@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <MouseFollower />
       <BackgroundEffect />
-      <main className="relative z-10">
+      <main className="relative z-10 pt-4">
         <Hero />
         <BentoGrid />
       </main>
